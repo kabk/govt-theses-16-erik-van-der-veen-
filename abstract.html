@@ -1,0 +1,176 @@
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<title>Erik</title>
+
+			<meta name="description" content="Shaking Future Snow Globes – Thesis by Erik van der Veen" />
+
+			<meta property="og:title" content="Shaking Future Snow Globes" />
+			<meta property="og:description" content="About speculative design" />
+            <meta property="og:image" content="http://kabk.github.io/govt-theses-16-erik-van-der-veen-/Images/stealthgoth.jpg" />
+            <meta property="og:author" content="Erik van der Veen" />
+            <meta property="dc:creator" content="Erik van der Veen" />
+
+		<link rel="stylesheet" type="text/css" href="teststyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+			<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+		</head>
+
+		<body>
+
+		<div class="background">
+				</div>
+
+		<div class="pagelayer">
+
+			<div class="Thesistext">
+
+<p>
+Shaking Future Snow Globes<br>
+Abstract<br>
+<br><br>
+
+Speculative design is a design niche that uses speculation to come up with possible futures. This type of design has recently been getting more and more attention. This is partly due to the increase in publications on the topic, partly by the present-day topics it taps into. The acceleration of technological innovations and the connected environmental costs raise questions about our future. Questions on the impact of these changes on society, but also questions on the new roles and practices of design in general and graphic design in particular. Speculative design can make future speculations and use design to exhibit these or use design to trigger the viewer to start contemplating the future. The speculations could for instance function as suggestions, warnings and/or critiques. 
+Although speculative design in the general design field has been discussed extensively, the possibilities of speculative practices in the field of graphic design have been less defined. This could be important for graphic design, for it is still struggling to get rid of its commercial and practical character. 
+The future is inevitably uncertain. That’s why people have always been willing to uncover it. In the past this used to be the job of prophets, seers and soothsayers. With their predicting visions they gave people certainty and hope. Scientists and writers also got interested in envisioning the future. The most famous examples coming from utopic and dystopic novels. These historical examples are interesting sources for designers to study not only the function of speculation, but also the methods used and perspectives taken. The same goes for the methods and perspectives that have been talked about in the recent writings on speculative design. 
+What could speculative practices mean for graphic design in particular?
+First of all, the methods used in speculative design could also be used in graphic design. Not necessarily to only predict the future, Also more in a more general sense to approach problems in a different way or help ideate, inspire and experiment.  
+Secondly, graphic designers could also initiate projects themselves in which they think about the future. Graphic design could use storytelling techniques that are unique to the discipline and its knowledge about distributing to exhibit ideas. 
+Thirdly, Graphic design could use speculation to think of its own future. Times are changing and so is the profession, therefore visionaries are needed to carry the discipline into the next era. 
+Lastly, it has to be noted that the lines between design disciplines are fading. It could be we should abandon the discussion about graphic design at all and start thinking from a more broad design perspective.
+
+			</p>
+		</div>
+			</div>
+
+
+
+			<div class="stripe" id="stripe">
+
+			</div>
+
+			<div class="blinkcover" id="blinkcover">
+
+			</div>
+
+			
+			<script>
+
+				var click = new Audio('click.wav');
+				var enter = new Audio('enter.wav');
+
+				
+
+				var li = $('li');
+					var liSelected;
+					$(window).keydown(function(e){
+					    if(e.which === 40){
+					    	click.pause();
+							click.currentTime = 0;
+					    	click.play();
+
+					        if(liSelected){
+					            liSelected.removeClass('selected');
+					            next = liSelected.next();
+					            if(next.length > 0){
+					                liSelected = next.addClass('selected');
+					            }else{
+					                liSelected = li.eq(0).addClass('selected');
+					            }
+					        }else{
+					            liSelected = li.eq(0).addClass('selected');
+
+					        }
+					    }else if(e.which === 38){
+					    	click.pause();
+							click.currentTime = 0;
+					    	click.play();
+					        if(liSelected){
+					            liSelected.removeClass('selected');
+					            next = liSelected.prev();
+					           	if(next.length > 0){
+					                liSelected = next.addClass('selected');
+					            }else{
+					                liSelected = li.last().addClass('selected');
+
+					            }
+					        }else{
+					            liSelected = li.last().addClass('selected');
+
+					        }
+					    }
+
+					    var pageNum = $(".selected > a").attr("href");
+
+						$(document).keyup(function(event){
+		    				if(event.keyCode == 13){
+		    					enter.play();
+
+		    					document.location.href = pageNum;								
+
+		    					//$("#" + pageNum).show();						
+						    	}
+						});
+
+				});
+
+				(function() {
+			    var s = document.getElementById('blinkcover').style,
+			        f = false,
+			        c1 = '#FFFFFF',
+			        c2 = '#F2F2F2';
+
+			    setInterval(function() {
+			        s.backgroundColor = f ? c1 : c2;
+			        s.color = f ? c2 : c1;
+			        f = !f;
+			    }, 1);
+				})();
+
+					var h = window.innerHeight;
+
+					var repeat = h / 4;
+
+					for(i = 0; i < repeat; i++) {
+
+					var div = document.createElement("div");
+					div.style.width = "100vw";
+					div.style.height = "2px";
+					div.style.background = "#000000";
+					div.className = "stripesingle";
+
+
+					document.getElementById('stripe').appendChild(div);
+
+					var div = document.createElement("div");
+					div.style.width = "100vw";
+					div.style.height = "2px";
+					div.style.background = "#FFFFFF";
+					div.className = "stripesingle";
+
+
+					document.getElementById('stripe').appendChild(div);
+					}
+
+
+					</script>
+
+					<script>
+
+					window.onresize = function(){ location.reload(); }
+
+				</script>
+
+
+
+
+		</body>
+
+</html>

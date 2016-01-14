@@ -1,0 +1,165 @@
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<title>Erik</title>
+
+			<meta name="description" content="Shaking Future Snow Globes – Thesis by Erik van der Veen" />
+
+			<meta property="og:title" content="Shaking Future Snow Globes" />
+			<meta property="og:description" content="About speculative design" />
+            <meta property="og:image" content="http://kabk.github.io/govt-theses-16-erik-van-der-veen-/Images/stealthgoth.jpg" />
+            <meta property="og:author" content="Erik van der Veen" />
+            <meta property="dc:creator" content="Erik van der Veen" />
+
+		<link rel="stylesheet" type="text/css" href="teststyle.css">
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+			<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+		</head>
+
+	<body>
+
+			<div class="background">
+				</div>
+
+			<ul>
+				<li><a href="abstract.html">ABSTRACT</a></li>
+				<li>INTRODUCTION</li>
+			    <li>CHAPTER 1</li>
+			    <li>CHAPTER 2</li>
+			    <li>CHAPTER 3</li>
+			    <li>CHAPTER 4</li>
+			    <li>CHAPTER 5</li>
+			    <li><a href="erik.html">EXIT</a></li>
+			</ul>
+
+
+
+			<div class="stripe" id="stripe">
+
+			</div>
+
+			<div class="blinkcover" id="blinkcover">
+
+			</div>
+
+			
+			<script>
+
+				var click = new Audio('click.wav');
+				var enter = new Audio('enter.wav');
+
+				
+
+				var li = $('li');
+					var liSelected;
+					$(window).keydown(function(e){
+					    if(e.which === 40){
+					    	click.pause();
+							click.currentTime = 0;
+					    	click.play();
+
+					        if(liSelected){
+					            liSelected.removeClass('selected');
+					            next = liSelected.next();
+					            if(next.length > 0){
+					                liSelected = next.addClass('selected');
+					            }else{
+					                liSelected = li.eq(0).addClass('selected');
+					            }
+					        }else{
+					            liSelected = li.eq(0).addClass('selected');
+
+					        }
+					    }else if(e.which === 38){
+					    	click.pause();
+							click.currentTime = 0;
+					    	click.play();
+					        if(liSelected){
+					            liSelected.removeClass('selected');
+					            next = liSelected.prev();
+					           	if(next.length > 0){
+					                liSelected = next.addClass('selected');
+					            }else{
+					                liSelected = li.last().addClass('selected');
+
+					            }
+					        }else{
+					            liSelected = li.last().addClass('selected');
+
+					        }
+					    }
+
+					    var pageNum = $(".selected > a").attr("href");
+
+						$(document).keyup(function(event){
+		    				if(event.keyCode == 13){
+		    					enter.play();
+
+		    					document.location.href = pageNum;								
+
+		    					//$("#" + pageNum).show();						
+						    	}
+						});
+
+				});
+
+				(function() {
+			    var s = document.getElementById('blinkcover').style,
+			        f = false,
+			        c1 = '#FFFFFF',
+			        c2 = '#F2F2F2';
+
+			    setInterval(function() {
+			        s.backgroundColor = f ? c1 : c2;
+			        s.color = f ? c2 : c1;
+			        f = !f;
+			    }, 1);
+				})();
+
+					var h = window.innerHeight;
+
+					var repeat = h / 4;
+
+					for(i = 0; i < repeat; i++) {
+
+					var div = document.createElement("div");
+					div.style.width = "100vw";
+					div.style.height = "2px";
+					div.style.background = "#000000";
+					div.className = "stripesingle";
+
+
+					document.getElementById('stripe').appendChild(div);
+
+					var div = document.createElement("div");
+					div.style.width = "100vw";
+					div.style.height = "2px";
+					div.style.background = "#FFFFFF";
+					div.className = "stripesingle";
+
+
+					document.getElementById('stripe').appendChild(div);
+					}
+
+
+					</script>
+
+					<script>
+
+					window.onresize = function(){ location.reload(); }
+
+				</script>
+
+
+
+
+		</body>
+
+</html>
