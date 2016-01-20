@@ -26,20 +26,43 @@
 	<body>
 
 			<div class="background">
+
+
+					<div id="block0">
+
+						</div>
+
+
+					<div id="block1">
+
+						</div>
+
 				</div>
 
+				<p class="Title">MENU</p>
+
 			<ul>
-				<li><a href="abstract.html">ABSTRACT</a></li>
-				<li>INTRODUCTION</li>
-			    <li>CHAPTER 1</li>
-			    <li>CHAPTER 2</li>
-			    <li>CHAPTER 3</li>
-			    <li>CHAPTER 4</li>
-			    <li>CHAPTER 5</li>
-			    <li><a href="erik.html">EXIT</a></li>
+				<li><a href="abstract.html">Abstract</a></li>
+				<li><a href="introduction.html">§1 – Introduction</a></li>
+			    <li><a href="chapter1.html">§2 – Future and Speculation</a></li>
+			    <li><a href="chapter2.html">§3 – History of Speculation</a></li>
+			    <li><a href="chapter3.html">§4 – On Speculative Design</a></li>
+			    <li><a href="chapter4.html">§5 – Speculative Graphic Design</a></li>
+			    <li><a href="conclusion.html">§6 – Conclusions</a></li>
+			    <li><a href="references.html">References</a></li>
+			    <li><a href="index.html">Back</a></li>
 			</ul>
 
-
+			<div class="navigation">
+			<p class="Title">
+					PAGE NAVIGATION<br></p><p>
+					↑ – up<br>
+					↓ - down<br>
+					e - enter<br>
+					b – back<br>
+					s – speculate<br>
+				</p>
+			</div>
 
 			<div class="stripe" id="stripe">
 
@@ -49,113 +72,11 @@
 
 			</div>
 
-			
-			<script>
+				<script src="js/background.js"></script>
 
-				var click = new Audio('click.wav');
-				var enter = new Audio('enter.wav');
+				<script src="js/navigation.js"></script>
 
-				
-
-				var li = $('li');
-					var liSelected;
-					$(window).keydown(function(e){
-					    if(e.which === 40){
-					    	click.pause();
-							click.currentTime = 0;
-					    	click.play();
-
-					        if(liSelected){
-					            liSelected.removeClass('selected');
-					            next = liSelected.next();
-					            if(next.length > 0){
-					                liSelected = next.addClass('selected');
-					            }else{
-					                liSelected = li.eq(0).addClass('selected');
-					            }
-					        }else{
-					            liSelected = li.eq(0).addClass('selected');
-
-					        }
-					    }else if(e.which === 38){
-					    	click.pause();
-							click.currentTime = 0;
-					    	click.play();
-					        if(liSelected){
-					            liSelected.removeClass('selected');
-					            next = liSelected.prev();
-					           	if(next.length > 0){
-					                liSelected = next.addClass('selected');
-					            }else{
-					                liSelected = li.last().addClass('selected');
-
-					            }
-					        }else{
-					            liSelected = li.last().addClass('selected');
-
-					        }
-					    }
-
-					    var pageNum = $(".selected > a").attr("href");
-
-						$(document).keyup(function(event){
-		    				if(event.keyCode == 13){
-		    					enter.play();
-
-		    					document.location.href = pageNum;								
-
-		    					//$("#" + pageNum).show();						
-						    	}
-						});
-
-				});
-
-				(function() {
-			    var s = document.getElementById('blinkcover').style,
-			        f = false,
-			        c1 = '#FFFFFF',
-			        c2 = '#F2F2F2';
-
-			    setInterval(function() {
-			        s.backgroundColor = f ? c1 : c2;
-			        s.color = f ? c2 : c1;
-			        f = !f;
-			    }, 1);
-				})();
-
-					var h = window.innerHeight;
-
-					var repeat = h / 4;
-
-					for(i = 0; i < repeat; i++) {
-
-					var div = document.createElement("div");
-					div.style.width = "100vw";
-					div.style.height = "2px";
-					div.style.background = "#000000";
-					div.className = "stripesingle";
-
-
-					document.getElementById('stripe').appendChild(div);
-
-					var div = document.createElement("div");
-					div.style.width = "100vw";
-					div.style.height = "2px";
-					div.style.background = "#FFFFFF";
-					div.className = "stripesingle";
-
-
-					document.getElementById('stripe').appendChild(div);
-					}
-
-
-					</script>
-
-					<script>
-
-					window.onresize = function(){ location.reload(); }
-
-				</script>
+				<script src="js/blink.js"></script>
 
 
 

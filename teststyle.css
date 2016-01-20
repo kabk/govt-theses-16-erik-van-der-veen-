@@ -6,16 +6,13 @@ html {
 
 body {
 
-
-
-
 Margin: 100px 100px 0px 200px;
 
 }
 
 li, a, p, h1, h2 {
 	color:white;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Source Code Pro', courier;
 	text-decoration: none;
 }
@@ -35,7 +32,9 @@ p, li, h1, h2, h3, a {
 	font-smooth: never;
 	text-shadow: 0px 0px 4px #FFFFFF;
 	opacity: 0.9;
-
+	-webkit-text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+    -moz-text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+    text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
 }
 
 div {
@@ -58,18 +57,16 @@ div {
 	left: 0px;
 }
 
-
-
 .blinkcover {
 
 	width: 100vw;
 	height: 100vh;
 	z-index: 100000;
-	background-color: white;
+	background-color: #F2F2F2;
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	opacity: 0.2;
+	opacity: 0.1;
 	pointer-events: none;
 }
 
@@ -80,10 +77,11 @@ div {
 	top: 0px;
 	position: fixed;
 	left: 0px;
-	opacity: 0.1;
+	opacity: 0.075;
 	margin: 0px;
 	padding: 0px;
 	pointer-events: none;
+	background-image: url("background.png");
 }
 
 .stripesingle{
@@ -107,12 +105,67 @@ ul {
 } 
 
 .Thesistext {
-	width:1200px;
+	width:1000px;
 	margin-bottom: 800px;
+	padding:60px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px black;
+    border-radius: 60px;
 }
+
+#block0, #block1 {
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+
+#block0 {
+	z-index: -7000;
+}
+
+#block1 {
+	z-index: -6999;
+}
+
 
 ::-webkit-scrollbar { 
     display: none;
+}
+
+.confirm_selection {
+    
+}
+
+@keyframes glow {
+    to {
+        color: yellow;
+    }
+}
+
+.Title {
+	text-decoration: underline;
+}
+
+.Title2 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+.navigation {
+
+	position: fixed;
+	z-index: 0;
+	padding: 20px;
+	bottom:20px;
+	right:40px;
+}
+
+.navigation p{
+
+	display: inline;
 }
 
 
