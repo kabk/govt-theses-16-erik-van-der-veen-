@@ -50,14 +50,14 @@ var click = new Audio('click.wav');
 						});*/
 
 						$(document).keyup(function(event){
-		    				if(event.keyCode == 69){
+		    				if(event.keyCode == 13){
 		    					document.location.href = pageNum;
 						    	}
 
 						});
 
 						$(document).keyup(function(event){
-		    				if(event.keyCode == 83){
+		    				if(event.keyCode == 49){
 		    					location.reload();
 						    	}
 

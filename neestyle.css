@@ -1,0 +1,52 @@
+html, body, div {
+	margin: 0px;
+	padding: 0px;
+	}
+
+.wrap {
+	width: 100%
+}
+
+.centerblock {
+	/*position: fixed;*/
+	height:100vh;
+	width:100vh;
+	top:0px;
+	overflow: scroll;
+}
+
+.centerblock2 {
+	position:fixed;
+	height:100vh;
+	width:100vh;
+	top:0px;
+	pointer-events: none;
+}
+
+.filter {
+	height:100vh;
+	width:100vh;
+	margin: 0% auto;
+	top:0px;
+	pointer-events: none;
+
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.textblock {
+	height:100%;
+	width:100%;
+	overflow: scroll;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+
+p {
+	color: blue;
+}

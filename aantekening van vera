@@ -1,0 +1,23 @@
+// HTML
+<span class="hoverword " id="plato"> Plato </span>
+
+<img class="plato" />
+
+
+
+// jQuery
+$('.hoverword').hover( function() {
+	// Google posY om google te vinden
+
+	var imageLocX = $(this).posX;
+	var imageLocY = $(this).posY;
+	var imageClass = '.' + $(this).attr('id');
+
+	// geef image pos absolute and display none in css
+	$(imageClass).css({
+		"display" : "block",
+		"left" : imageLocX,
+		"top" : imageLoxY,
+	});
+
+})
