@@ -8,7 +8,7 @@
 		</p>
 
 		<ul>
-			<li><a href="menu.php">
+			<li><a href="http://erikvanderveen.com/thesis/index.php">
 					OPEN
 				</a>
 				</li>
