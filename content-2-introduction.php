@@ -49,7 +49,7 @@ In this text I would like to explore speculative design and put it into a broade
 
 <div id="no" class="imagebox">
 
-			<img src="img/no.jpg">
+			<img src="img/no.png">
 	</div>
 
 </div>

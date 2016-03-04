@@ -25,7 +25,7 @@ Third, think about the method you will apply to speculate. We have seen that the
 <br>
 
 <br>
-Fourth, combine abstract topics with entertainment and exciting visuals. By combining high intellectual excitement with high emotional excitement, you can appeal to a broad audience. Some will be directly tempted by the deeper questions, but some need to be lured in with entertainment. This trick is a trick we can learn from science fiction. 
+Fourth, combine abstract topics with entertainment and exciting visuals. By combining high intellectual excitement with high emotional excitement, you can appeal to a broad audience. Some will be directly tempted by the deeper questions, but some need to be lured in with entertainment. This is a trick we can learn from science fiction. 
 <br>
 
 <br>

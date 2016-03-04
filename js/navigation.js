@@ -51,7 +51,12 @@ var click = new Audio('click.wav');
 
 						$(document).keyup(function(event){
 		    				if(event.keyCode == 13){
-		    					document.location.href = pageNum;
+		    					
+		    					if ($('.selected').length){
+		    						document.location.href = pageNum;
+    							}
+
+						    	
 						    	}
 
 						});
@@ -69,6 +74,13 @@ var click = new Audio('click.wav');
 						    	}
 						});
 
+						
+					
+
 					
 
 				});
+
+$( "#button" ).click(function() {
+  							location.reload();
+							});

@@ -17,9 +17,14 @@
 
 			</div>
 
-							<div id="mobilebutton">
+				<div class="mobileinfo">
 
-								<button type="button">New Speculation</button>
+					<p>For the complete experience and full text of this thesis switch to a bigger screen</p>
 
+				</div>
 
-							</div>
+				<div class="mobilebutton" id="mobilebutton">
+
+								<button type="button" id="button">New Speculation</button>
+
+				</div>

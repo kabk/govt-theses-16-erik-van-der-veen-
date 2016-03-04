@@ -235,23 +235,22 @@ div.print {
 	}
 
 	.Hprint {
-				font-size: 20px;
+			font-size: 20px;
+			font-family: 'Source Code Pro', courier;
+
+
 	}
 
 	div.print p {
 		color:black;
 		font-size: 12px;
-		font-family: 'Times', times;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		text-decoration: none;
 		line-height: 150%;
-		letter-spacing: 0.5px;
 		text-shadow: none;
-		margin-left: 10%;
-		margin-right: 10%;
-
-
+		margin-left: 7%;
+		margin-right: 15%;
 	}
-
 }
 
 
@@ -260,16 +259,29 @@ div.print {
     
     	.Thesistext {
 			width:60%;
-		margin-bottom: 800px;
-	}
+			margin-bottom: 800px;
+
+		}
+		
+		.mobilebutton, .mobileinfo {
+
+			display: none;
+
+		}
 }
 
 @media only screen and (min-width: 1500px) {
     
     	.Thesistext {
 			width:1000px;
-		margin-bottom: 800px;
-	}
+			margin-bottom: 800px;
+		}
+
+		.mobilebutton, .mobileinfo {
+
+			display: none;
+
+		}
 
 }
 
@@ -285,6 +297,65 @@ div.print {
 
 		html{
 			cursor: pointer;
+		}
+		
+		.mobileinfo {
+
+			display: block;
+			position: fixed;
+			z-index: 0;
+			padding: 20px;
+			top:0px;
+			left:0px;
+			background-color: black;			
+		}
+
+		.mobileinfo p {
+
+			font-size: 12px;
+
+		}
+
+		.mobilebutton {
+
+			display: block;
+			position: fixed;
+			z-index: 0;
+			padding: 0;
+			bottom:10px;
+			right:10px;
+
+		}
+
+		/*.button {
+			color:white;
+			font-size: 22px;
+			font-family: 'Source Code Pro', courier;
+			text-decoration: none;
+			line-height: 150%;
+			letter-spacing: 0.5px;
+		}*/
+
+		div.mobileinfo p, button{
+
+			color:white;
+			font-family: 'Source Code Pro', courier;
+			text-decoration: none;
+			line-height: 150%;
+			letter-spacing: 0.5px;
+			font-smooth: never;
+			text-shadow: 0px 0px 4px #FFFFFF;
+			-webkit-text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+    		-moz-text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+			text-shadow: -2px 0 2px #000, 2px 0 2px #000, 0 -2px 2px #000, 0 2px 2px #000;
+
+		}
+
+		button {
+			background-color: gray;
+			border-radius: 12px;
+			font-size: 22px;
+
 		}
 
 

@@ -4,7 +4,7 @@
 
 
                                                     
-		<p><span id="no">[1]</span> Thesis Found: <br>Erik van der Veen – Shaking Future Snow Globes
+		<p><span id="no">[1]</span> Thesis Found: <br><i>Erik van der Veen – Shaking Future Snow Globes</i>
 		</p>
 
 		<ul>

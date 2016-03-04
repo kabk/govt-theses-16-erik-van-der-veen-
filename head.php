@@ -3,7 +3,10 @@
 		<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			
-			<title>Erik</title>
+			<title>Thesis – Shaking Future Snow Globes – Erik van der Veen</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+
 
 			<meta name="description" content="Shaking Future Snow Globes – Thesis by Erik van der Veen" />
 
