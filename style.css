@@ -283,6 +283,10 @@ div.print {
 			display: none;
 		}
 
+		html{
+			cursor: pointer;
+		}
+
 
 }
 
